@@ -42,6 +42,17 @@
         margin-bottom: 0;
         width: 100%;
     }
+    .link {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+    }
+        #link-1 {
+            border-right: .5px solid gray;
+        }
+        #link-2 {
+            border-left: .5px solid gray;
+        }
     
     </style>
 
@@ -59,9 +70,8 @@
 
     <div class="row">
         <div class="col">
-            <a href="/api/tables">API Table Link</a>
-            <p>     |     </p>
-            <a href="/api/wait-list">API Waitlist Link</a>
+            <a id="link-1" class="link" href="/api/tables">API Table Link</a>
+            <a id="link-2" class="link" href="/api/wait-list">API Waitlist Link</a>
         </div>
     </div>
 
