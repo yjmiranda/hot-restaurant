@@ -11,10 +11,10 @@
 
 
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
+    body {
+        margin: 0;
+        padding: 0;
+    }
     
     .container {
         background-color: black;
@@ -54,42 +54,37 @@
             border-left: .5px solid gray;
         }
 
+    .all-reservations {
+        background-color: black;
+        color: white;
+        border-radius: 10px;
 
-
-.all-reservations {
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-
-    padding-bottom: 2px;
-    margin: 50px;
-    margin-left: 20%;
-    width: 60%;
-}
-    .current-reservations {
-        text-align: center;
-        margin-top: 21px;
-        padding-top: 21px;
-    }
-
-
-
-    .tables {
-        border: 1px solid black;
-
+        padding-bottom: 2px;
         margin: 50px;
-        margin-top: 0;
-        width: 90%;
+        margin-left: 20%;
+        width: 60%;
     }
-        .table {
-            background-color: white;
+        .current-reservations {
+            text-align: center;
+            margin-top: 21px;
+            padding-top: 21px;
+        }
+        .tables {
             border: 1px solid black;
 
-            padding: 10px;
-            margin: 25px;
+            margin: 50px;
+            margin-top: 0;
             width: 90%;
         }
-    
+            .table {
+                background-color: white;
+                border: 1px solid black;
+                border-radius: 10px;
+
+                padding: 10px;
+                margin: 25px;
+                width: 90%;
+            }    
     </style>
 
 
@@ -97,7 +92,7 @@
 <body>
 
     <div class="container">
-        <h1 class="h-tag"><i class="fas fa-fire-extinguisher mr-2"></i>          Hot Restaurant</h1>
+        <h1 class="h-tag"><i class="fas fa-fire-extinguisher mr-2"></i> Hot Restaurant</h1>
         <h3 class="h-tag">Welcome to the best place to find HOT food</h3>
 
         <a id="home" class="btn btn-lg bg-light text-dark home mt-5"; role="button" href="/"><i class="fas fa-home"></i></a>
@@ -105,9 +100,10 @@
     </div>
 
     <div class="all-reservations">
-        <h1 class="current-reservations">Current Reservations</h1>
+        <h2 class="current-reservations"> <i class="fas fa-scroll"></i> Current Reservations</h2>
 
         <div class="tables">
+            <a id="close-1" class="close"><i class="fas fa-window-close"></i></a>
             <div class="table" id="table-1">
                 <h4>Table 1</h4>
                 <p id="id-1">ID:</p>
@@ -115,6 +111,7 @@
                 <p id="email-1">Email:</p>
                 <p id="phone-1">Phone:</p>
             </div>
+            <a id="close-2" class="close"><i class="fas fa-window-close"></i></a>
             <div class="table" id="table-2">
                 <h4>Table 2</h4>
                 <p id="id-2">ID:</p>
@@ -122,6 +119,7 @@
                 <p id="email-2">Email:</p>
                 <p id="phone-2">Phone:</p>
             </div>
+            <a id="close-3" class="close"><i class="fas fa-window-close"></i></a>
             <div class="table" id="table-3">
                 <h4>Table 3</h4>
                 <p id="id-3">ID:</p>
@@ -129,6 +127,7 @@
                 <p id="email-3">Email:</p>
                 <p id="phone-3">Phone:</p>
             </div>
+            <a id="close-4" class="close"><i class="fas fa-window-close"></i></a>
             <div class="table" id="table-4">
                 <h4>Table 4</h4>
                 <p id="id-4">ID:</p>
@@ -136,6 +135,7 @@
                 <p id="email-4">Email:</p>
                 <p id="phone-4">Phone:</p>
             </div>
+            <a id="close-5" class="close"><i class="fas fa-window-close"></i></a>
             <div class="table" id="table-5">
                 <h4>Table 5</h4>
                 <p id="id-5">ID:</p>
@@ -146,9 +146,6 @@
         </div>
 
     </div>
-
-
-
 
     <div class="row">
         <div class="col">
